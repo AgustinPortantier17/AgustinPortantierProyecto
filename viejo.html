@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Cinzel:wght@400..900&family=Goudy+Bookletter+1911&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/icono.png" type="image/x-icon" />
+    <title>Librería República</title>
+  </head>
+
+  <body>
+    <!-- 1- Estructura de Header: Logo hasta botones-->
+    <header class="top-header">
+      <div class="first-header">
+        <a href="index.html">
+          <img
+            src="./assets/logo.png"
+            alt="Logo de Librería República"
+            class="logo"
+          />
+        </a>
+        <input
+          class="buscador"
+          type="text"
+          placeholder="Buscar libro por título, autor o género"
+          aria-label="Buscar"
+        />
+        <button class="btn-fav" aria-label="Ver libros favoritos">
+          <img src="assets/fav.png" alt="Icono de favoritos" />
+        </button>
+        <button class="btn-carrito" aria-label="Ver carrito de compras">
+          <img src="assets/buy.png" alt="Icono del carrito de compras" />
+        </button>
+        <button class="btn-account" aria-label="Mi cuenta">
+          <img src="assets/account.png" alt="Icono de mi cuenta" />
+        </button>
+      </div>
+
+      <!-- Navegacion entre paginas -->
+      <div class="menu-container">
+        <nav class="menu" aria-label="Menú principal">
+          <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- 1- Estructura de Sección: Novedades -->
+      <section class="new-container">
+        <h3>Novedades</h3>
+        <ul class="new-books">
+          <li class="book-caja">
+            <img class="img-book" src="assets/new1.jpg" alt="La Metamorfosis" />
+            <h4>La Metamorfosis</h4>
+            <p>Franz Kafka</p>
+            <div class="book-end">
+              <p class="cost">$400</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/new2.jpg" alt="Cujo" />
+            <h4>Cujo</h4>
+            <p>Stephen King</p>
+            <div class="book-end">
+              <p class="cost">$520</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/new3.jpg"
+              alt="Cementerio de Animales"
+            />
+            <h4>Cementerio de Animales</h4>
+            <p>Stephen King</p>
+            <div class="book-end">
+              <p class="cost">$650</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/new4.jpg"
+              alt="Cien Años de Soledad"
+            />
+            <h4>Cien Años de Soledad</h4>
+            <p>Gabriel García Márquez</p>
+            <div class="book-end">
+              <p class="cost">$800</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/new5.jpeg"
+              alt="La Adolescencia Normal"
+            />
+            <h4>La Adolescencia Normal: Un Enfoque psicoanalítico</h4>
+            <p>Arminda Aberastury y Mauricio Knobel</p>
+            <div class="book-end">
+              <p class="cost">$450</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <!-- 2- Estructura de Sección: Próximamente -->
+      <section class="new-container">
+        <h3>Próximamente</h3>
+        <ul class="new-books">
+          <li class="book-caja">
+            <img class="img-book" src="assets/prox1.jpg" alt="Torre del Alba" />
+            <h4>Torre del Alba</h4>
+            <p>Sarah J. Maas</p>
+            <div class="book-end">
+              <p class="cost">$950</p>
+              <button>Reservar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/prox2.jpg" alt="Elegirme" />
+            <h4>Elegirme</h4>
+            <p>Luna Javierre</p>
+            <div class="book-end">
+              <p class="cost">$760</p>
+              <button>Reservar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/prox3.jpg"
+              alt="Los Mitos Eternos"
+            />
+            <h4>Los Mitos Eternos</h4>
+            <p>Pol Gise</p>
+            <div class="book-end">
+              <p class="cost">$700</p>
+              <button>Reservar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/prox4.jpg"
+              alt="La Última Carta"
+            />
+            <h4>La Última Carta</h4>
+            <p>Rebecca Yarros</p>
+            <div class="book-end">
+              <p class="cost">$750</p>
+              <button>Reservar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/prox5.jpg" alt="Tras la Puerta" />
+            <h4>Tras la Puerta</h4>
+            <p>Freida McFadden</p>
+            <div class="book-end">
+              <p class="cost">$850</p>
+              <button>Reservar</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="mid-info">
+        <img src="assets/img-info.jpg" alt="" />
+      </div>
+      <!-- 3- Estructura de Sección: Recomendados -->
+      <section class="new-container">
+        <h3>Recomendados</h3>
+        <ul class="new-books">
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/recom1.jpg"
+              alt="El Psicoanalista"
+            />
+            <h4>El Psicoanalista</h4>
+            <p>John Katzenbach</p>
+            <div class="book-end">
+              <p class="cost">$500</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/recom2.jpg"
+              alt="Flores para Algernon"
+            />
+            <h4>Flores para Algernon</h4>
+            <p>Daniel Keyes</p>
+            <div class="book-end">
+              <p class="cost">$900</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/recom3.jpg"
+              alt="Promesa de Sangre"
+            />
+            <h4>Promesa de Sangre</h4>
+            <p>Brian McClellan</p>
+            <div class="book-end">
+              <p class="cost">$1200</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/recom4.jpg"
+              alt="Los Tres Mosqueteros"
+            />
+            <h4>Los Tres Mosqueteros</h4>
+            <p>Alexandre Dumas</p>
+            <div class="book-end">
+              <p class="cost">$600</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/recom5.jpg" alt="Moby Dick" />
+            <h4>Moby Dick</h4>
+            <p>Herman Melville</p>
+            <div class="book-end">
+              <p class="cost">$400</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="new-container">
+        <h3>Los Más Vendidos</h3>
+        <ul class="new-books">
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/top1.jpg"
+              alt="Nacidos de la Bruma"
+            />
+            <h4>Nacidos de la Bruma</h4>
+            <p>Brandon Sanderson</p>
+            <div class="book-end">
+              <p class="cost">$990</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/top2.jpg" alt="1984" />
+            <h4>1984</h4>
+            <p>George Orwell</p>
+            <div class="book-end">
+              <p class="cost">$1100</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img class="img-book" src="assets/top3.jpg" alt="Gestos Letales" />
+            <h4>Gestos Letales</h4>
+            <p>Sebastian Fitzek</p>
+            <div class="book-end">
+              <p class="cost">$850</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/top4.jpg"
+              alt="El Niño que Perdió la Guerra"
+            />
+            <h4>El Niño que Perdió la Guerra</h4>
+            <p>Julia Navarro</p>
+            <div class="book-end">
+              <p class="cost">$1200</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+          <li class="book-caja">
+            <img
+              class="img-book"
+              src="assets/top5.jpg"
+              alt="A la caza de Jack el Destripador"
+            />
+            <h4>A la caza de Jack el Destripador</h4>
+            <p>Kerri Maniscalco</p>
+            <div class="book-end">
+              <p class="cost">$600</p>
+              <button>Comprar</button>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <a href="index.html">
+          <img
+            src="./assets/logo.png"
+            alt="Logo de Librería República"
+            class="logo"
+          />
+        </a>
+      </div>
+      <section class="footer-info">
+        <h3>Contáctanos</h3>
+        <address>
+          <ul>
+            <li>Av. República 1234, Montevideo, Uruguay.</li>
+            <li>Whatsapp: 099 000 111.</li>
+            <li>Lunes a Viernes de 09:00 a 18:00.</li>
+          </ul>
+        </address>
+      </section>
+      <div class="footer-info">
+        <h3>Redes Sociales</h3>
+        <ul>
+          <li>Instagram: LibreríaRepúblicaOK.</li>
+          <li>X: @LibreríaRepública</li>
+          <li>Facebook: Librería República</li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h3>Newsletter</h3>
+        <p>Suscríbete para recibir novedades y ofertas especiales.</p>
+        <input type="email" placeholder="Correo electrónico" />
+        <button>Suscribirme</button>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13089.108717642826!2d-56.173199!3d-34.899493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f804cdceb39e3%3A0xbadd1aa2990b5b49!2sRep%C3%BAblica%201234%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1742691622098!5m2!1ses-419!2suy"
+          width="100%"
+          height="100%"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </footer>
+  </body>
+</html>
