@@ -4,7 +4,10 @@
     font-family: "Cinzel", serif;
     box-sizing: border-box;
 }
-
+body {
+    font-size: 1rem;
+    background-color: #e1eecb
+}
 .cabeza {
     width: 100%;
     background-color: #1c3567;
@@ -15,107 +18,93 @@
 }
 .top-logo {
     width: 20%;
-    height: 100%;
-    margin-top: 20px;
+    height: auto;
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .top-logo img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
 }
 .buscador {
     width: 60%;
-    height: 100%;
+    height: 3.125rem;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-    border: 2px solid #47587d;
     border-radius: 15px;
-    
+    overflow: hidden;
 }
 .buscador input {
-    width: 95%;
-    height: 100%;
+    flex: 1;
     display: flex;
     align-content: center;
-    padding: 10px 35px 10px 10px;
+    padding: 0.625rem;
     border-radius: 15px 0 0 15px;
     outline: none;
-    font-size: 20px;
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    
+    font-size: 1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .buscador button {
-    height: 100%;
     background-color: #5c7ee6;
-    padding: 0 15px;
-    position: absolute;
-    border: 0;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
+    width: 3rem;
     border-radius: 0 15px 15px 0;
     cursor: pointer;
 }
 .buscador button:hover {
     background-color: #0f6295;
 }
-
-
 .buscador button img {
-    width: 40px;
-    height: 40px;
+    width: 1.5rem;
+    height: 2rem;
 }
 .btn-usuario {
     width: 20%;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 1.25rem;
 }
 .btn-usuario button {
-    align-items: first baseline;
-    width: 50px;
-    height: 50px;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
     cursor: pointer;
+    border-radius: 15px;
 }
-
+.btn-usuario button:hover {
+    background-color: #2a7bae;
+}
 .menu-paginas {
     background-color: #135c89;
     color: #e7dfbf;
     font-weight: bold;
-    display: flex;
-    justify-content: center;
+ 
 }
 .menu-paginas ul {
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 1rem;
     list-style: none;
-    font-size: 40px;
+    font-size: 1.75rem;
+    justify-content: center;
 }
 .menu-paginas ul li {
-    padding: 20px;
+    padding: 0.5rem;
     cursor: pointer;
+    text-align: center;
 }
 .menu-paginas ul li a {
     color: #efecdd;
     text-decoration: none;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 1px 1px 2px #000000;
+    border-bottom: 1px solid #fff;
 }
 
-body {
-    background-color: #e1eecb;
-}
 .cuerpo {
     width: 80%;
-    margin: 0 10% 0 10%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -126,9 +115,9 @@ body {
     list-style: none;
 }
 .new-subtitulo {
-    margin: 20px 0;
+    margin: 1.25rem 0;
     text-align: center;
-    font-size: 40px;
+    font-size: 1.5rem;
     text-decoration: underline;
     font-weight: 900;
     text-shadow: 2px 2px 20px #ddd5a6;
@@ -137,62 +126,71 @@ body {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
-    gap: 10px;
+    gap: 0.625rem;
 }
 
-.selected-news li {
+.selected-news li,
+.all-books li {
     background: linear-gradient(to bottom, #1e0882, #b4ccdc);
-    width: 230px;
-    padding: 20px;
+    width: 100%;
+    padding: 1rem;
     border-radius: 15px;
     display: grid;
     justify-content: center;
+    align-items: center;
     border: 1px solid black;
-
 }
 
-.selected-news li img {
-    width: 200px;
-    height: 300px;
+.selected-news li img,
+.all-books li img {
+    width: 10vw;
+    height: auto;
     border-radius: 15px;
     cursor: pointer;
 }
 
-.selected-news li h4, 
-.selected-news li h5 {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
+.selected-news li h4,
+.selected-news li h5,
+.all-books li h4,
+.all-books li h5 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     width: 100%;
     display: block;
-    margin: 5px;
+    margin: 0.5rem;
     color: #ffffff;
-    text-shadow: 2px 2px 2px #000000;
+    text-shadow: 1px 1px 2px #000000;
+    font-size: 1rem;
 }
-.selected-news li p {
+.selected-news li p,
+.all-books li p {
     font-size: 1.4rem;
-    margin-top: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     text-align: center;
     text-decoration: underline;
     font-weight: bold;
-    color: #FFF9B0;
-    text-shadow: 2px 2px 2px #000000;
+    color: #cee890;
+    text-shadow: 1px 1px 2px #000000;
 }
-.selected-news li button {
+.selected-news li button,
+.all-books li button {
     border-radius: 10px;
     cursor: pointer;
-    margin-top: 20px;
+    margin-top: 1rem;
     font-weight: 800;
-    background-image: linear-gradient(to right,#1c3567 0%, #5d74a7  51%, #1c3567  100%);
+    background-image: linear-gradient(to right, #1c3567 0%, #5d74a7 51%, #1c3567 100%);
     transition: 0.5s;
     background-size: 200% auto;
     color: #ffffff;
-    font-size: 19px;
+    font-size: 1rem;
     display: block;
     margin: auto;
-    padding:0 2px;
+    padding: 0.3rem;
 }
-.selected-news li button:hover {
+.selected-news li button:hover,
+.all-books li button:hover {
     background-position: right center;
     color: #fff;
     text-decoration: none;
@@ -204,354 +202,418 @@ body {
     background-color: #1e0882;
     border: 1px solid black;
     border-radius: 15px;
-    padding-right: 10px;
+    padding-right: 0.625rem;
 }
 
-.proximos {
-    margin-top: 30px;
-}
 .mid-info {
     width: 100%;
 }
-.mid-info img{
+.mid-info img {
     width: 100%;
-    height: 50%;
-    padding: 10px;
-
+    height: auto;
+    padding: 0.625rem;
 }
 .all-books {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    gap: 30px 20px;
+    gap: 1.875rem 1.25rem;
 }
-.all-books li {
-    background: linear-gradient(to bottom, #1e0882, #b4ccdc);
-    width: 230px;
-    padding: 20px;
-    border-radius: 15px;
-    display: grid;
-    justify-content: center;
-    border: 1px solid black;
-
-}
-
-.all-books li img {
-    width: 200px;
-    height: 300px;
-    border-radius: 15px;
-    cursor: pointer;
-}
-
-.all-books li h4, 
-.all-books li h5 {
-    white-space: nowrap; 
-    overflow: hidden; 
-    text-overflow: ellipsis; 
-    width: 100%;
-    display: block;
-    margin: 5px;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px #000000;
-}
-.all-books li p {
-    font-size: 1.4rem;
-    margin-top: 10px;
-    text-align: center;
-    text-decoration: underline;
-    font-weight: bold;
-    color: #FFF9B0;
-    text-shadow: 2px 2px 2px #000000;
-}
-.all-books li button {
-    border-radius: 10px;
-    cursor: pointer;
-    margin-top: 20px;
-    font-weight: 800;
-    background-image: linear-gradient(to right,#1c3567 0%, #5d74a7  51%, #1c3567  100%);
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: #ffffff;
-    text-shadow: 1px 1px 2px #000000;
-    font-size: 19px;
-    display: block;
-    margin: auto;
-    padding:0 2px;
-}
-.all-books li button:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-}
-
-
 
 footer {
     background-color: #1c3567;
     color: #f6eeeb;
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     display: flex;
-    gap: 50px;
-    margin-top: 20px;
+    gap: 3.125rem;
+    margin-top: 1.25rem;
     text-shadow: 2px 2px 2px #000000;
 }
 
-.footer-info{
+.footer-info {
     flex: 1;
     display: flex;
     flex-direction: column;
 }
 .pie-logo {
     width: 20%;
-    height: 100%;
+    height: auto;
 }
 .pie div img {
     width: 100%;
-    height: 100%;
+    height: auto;
     display: block;
-
 }
 .footer-info h3 {
-    font-size: 35px;
-    margin-bottom: 10px;
+    font-size: 1.25rem;
+    margin-bottom: 0.625rem;
 }
-.footer-info li, p {
+.footer-info li,
+.footer-info p {
+    font-size: 0.9rem;
+    margin-bottom: 0.5rem;
     list-style: none;
-    font-size: 20px;
-    margin-bottom: 5px;
 }
 .footer-info input {
     width: 100%;
-    height: 40px;
-    margin-top: 10px;
+    height: 2.5rem;
+    margin-top: 0.5rem;
     border-radius: 10px;
-    font-size: 20px;
+    font-size: 1rem;
     text-align: center;
     align-self: center;
 }
 .footer-info button {
     border: none;
-    margin: 10px;
+    margin: 0.5rem;
     cursor: pointer;
     width: 50%;
     align-self: center;
-    font-size: 20px;
+    font-size: 1rem;
 }
-
-
-
 
 
 /*CONTACTO.HTML*/
 
-
 .formulario {
     display: flex;
-    flex-direction: column; /* elementos en columna */
-    gap: 15px; 
-    max-width: 600px; 
-    margin: 0 auto; /* centrado horizontal */
-    
+    flex-direction: column;
+    gap: 0.9375rem;
+    max-width: 37.5rem;
+    margin: 0 auto;
 }
 
 .formulario label {
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .formulario input,
 .formulario textarea {
-    width: 100%; 
-    padding: 10px;
-    font-size: 1rem; 
-    border: 1px solid #ccc; 
-    border-radius: 5px; 
-    box-sizing: border-box; 
+    width: 100%;
+    padding: 0.625rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
 }
 
 .formulario textarea {
-    height: 150px; 
-    resize: none; /*no se puede modificar tamaño */
+    height: 9.375rem;
+    resize: none;
 }
 
 .formulario button {
-    padding: 10px 20px;
-    font-size: 2rem; 
-    background-color: #0f6295; 
-    color: #fff; 
+    padding: 0.625rem 1.25rem;
+    font-size: 1rem;
+    background-color: #0f6295;
+    color: #fff;
     border: none;
-    border-radius: 5px; 
+    border-radius: 5px;
     cursor: pointer;
-    max-width: 150PX;
+    max-width: 9.375rem;
     text-align: center;
     align-self: center;
 }
 
-
 /* RESPONSIVE */
 
-/* Tamaño XS*/
-/* Ocultar el menú en dispositivos pequeños */
-@media (max-width: 320px) {
+/* Tamaño de Movil pequeños*/
+@media (max-width: 480px) {
     .top-cabeza {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 5px;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 10px;
     }
     .top-logo {
-        width: 100%;
-        margin-top: 0px;
+        margin: 0 auto;
     }
     .top-logo img {
         width: 200px;
         height: 100px;
+        display: block;
+        margin: 0 auto;
     }
     .buscador {
-        width: 80%;
-        height: 50%;
-        grid-area: 2 / 1 / 2 / 3;
+        width: 100%;
+        height: 5vh;
+    }
+    .buscador input {
+        width: 100%;
+        font-size: 0.87rem;
+        margin: 0 auto;
+    }
+    .buscador button {
+        width: 3.73rem;
+        margin: 0 auto;
+    }
+    .buscador button img {
+        width: 1.68rem;
+        height: 2.69rem;
     }
     .btn-usuario {
         width: 100%;
-        margin: 0 2px;
-        grid-area: 1 / 2 / 2 / 3;
+        margin: 0 auto;
+    }
+    .btn-usuario button {
+        width: 3.34rem;
+    }
+    .menu-paginas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .menu-paginas ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-paginas ul li {
+        padding: 8px;
     }
     .menu-paginas ul li a {
-        font-size: 20px;
+        font-size: 1rem;
     }
-
+    .cuerpo {
+        width: 100%;
+        margin: 0;
+    }
+    .cuerpo section {
+        width: 90%;
+    }
     .new-subtitulo {
-        font-size: 25px;
+        font-size: 1.25rem;
     }
     .selected-news,
     .all-books {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        padding: 0;
+        gap: 15px 2px;
     }
     .selected-news li,
     .all-books li {
-        width: 200px;
+        width: 100%;
         padding: 10px;
     }
     .selected-news li img,
     .all-books li img {
-        width: 130px;
-        height: 200px;
-    }
-
-
-
-
-
-
-
-    .pie-logo {
         width: 100%;
         height: 100%;
+        display: block;
+        margin: 0 auto;
     }
-}
-
-
-
-
-
-
-
-
-/* @media (max-width: 480px) {
-    body {
-        font-size: 14px; 
-        background-color: #e1eecb;
+    .selected-news li h4,
+    .selected-news li h5,
+    .all-books li h4,
+    .all-books li h5 {
+        font-size: 1.5rem;
+        white-space: wrap;
     }
-    .cabeza {
-        width: 100%;
+    .selected-news li p,
+    .all-books li p {
+        font-size: 2rem;
     }
-    .top-cabeza {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        padding: 5px;
-    }
-    .top-logo {
-        width: 100%;
-        margin-top: 0px;
-        grid-area: 1 / 1 / 2 / 3;
-    }
-    .top-logo img {
-        width: 300px;
-        height: 120px;
-    }
-    .buscador {
-        width: 100%;
-        height: 50%;
-    }
-    .buscador input {
-        font-size: 16px;
-    }
-    .buscador button {
-        width: 20%;
-        height: 100%;
-        padding: 0 5px;
-    }
-    .buscador button img {
-        width: 20px;
-        height: 30px;
-    }
-    .btn-usuario {
-        width: 100%;
-    }
-    .menu-paginas ul li a {
-        font-size: 20px;
-    }
-} */
-
-/* Tamaño XL*/
-/* @media (max-width: 1200px) {
-
-    .top-logo {
-        display: flex;
-        width: 35%;
-    }
-    .buscador {
-        width: 30%;
-        height: 100%;
-        justify-content: space-between;
-    }
-    .btn-usuario {
-        width: 35%;
-        display: flex;
-    }
-    
-    
-    .cuerpo {
-        width: 90%;
-        margin: 0 5% 0 5%;
-    }
-    .all-books {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .selected-news {
-        grid-template-columns: repeat(3, 1fr);
+    .selected-news li button,
+    .all-books li button {
+        font-size: 1.5rem;
     }
     footer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 80px 1fr 1fr 1fr;
         gap: 10px;
-        align-items: center;
+        align-items: baseline;
     }
     .pie-logo {
         width: 100%;
         height: 100%;
+        grid-area: 1 / 1 / 2 / 3;
     }
-
+    .pie-logo a img {
+        width: 15rem;
+        height: 6.25rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-info h3 {
+        font-size: 1.25rem;
+    }
+    .footer-info li, p {
+        font-size: 0.75rem;
+    }
+    .footer-info:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .footer-info ul {
+        padding-left: 0;
+    }
+    .footer-info input {
+        font-size: 1.25rem;
+    }
+    .footer-info button {
+        font-size: 1.25rem;
+    }
     .map {
         width: 100%;
         height: 100%;
-        grid-area: 3 / 1 / 3 / 3;
+        grid-area: 4 / 1 / 4 / 3;
         margin: 0;
+    }
+}
+/* Tamaño Mediano de moviles*/
+@media (min-width: 481px) and (max-width: 768px) {
+    .top-cabeza {
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        padding: 10px;
+    }
+    .top-logo {
+        margin: 0 auto;
+    }
+    .top-logo img {
+        width: 200px;
+        height: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+    .buscador {
+        width: 100%;
+        height: 5vh;
+    }
+    .buscador input {
+        width: 100%;
+        font-size: 1.05rem;
+        margin: 0 auto;
+    }
+    .buscador button {
+        width: 4.2rem;
+        margin: 0 auto;
+    }
+    .buscador button img {
+        width: 2.25rem;
+        height: 2.69rem;
+    }
+    .btn-usuario {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .btn-usuario button {
+        width: 3.2rem;
+    }
+    .menu-paginas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .menu-paginas ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-paginas ul li {
+        padding: 8px;
 
     }
-} */
+    .menu-paginas ul li a {
+        font-size: 1.25rem;
+    }
+    .cuerpo {
+        width: 100%;
+        background-color: chartreuse;
+        margin: 0;
+    }
+    .selected-news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        padding-left: 0;
+        justify-items: center;
+    }   
+    .new-subtitulo {
+        font-size: 1.5rem;
+    }
+    .selected-news li,
+    .all-books li {
+        margin: 1vw;
+        width: 97%;
+    }
+    .selected-news li img,
+    .all-books li img {
+        width: 100%;
+        height: 100%;
+    }
+    .selected-news li h4,
+    .selected-news li h5,
+    .all-books li h4,
+    .all-books li h5 {
+        font-size: 0.95rem;
+        white-space: wrap; 
+    }
+    .selected-news li p {
+        font-size: 1.2rem;
+    }
+    .selected-news li button {
+        font-size: 1.1rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: baseline;
+    }
+    .pie-logo {
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .pie-logo a img {
+        width: 15rem;
+        height: 6.25rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-info h3 {
+        font-size: 1.25rem;
+    }
+    .footer-info li, p {
+        font-size: 0.9rem;
+    }
+    .footer-info:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .footer-info ul {
+        padding-left: 0;
+    }
+    .footer-info input {
+        font-size: 1.25rem;
+    }
+    .footer-info button {
+        font-size: 1.25rem;
+    }
+    .map {
+        width: 100%;
+        height: 100%;
+        grid-area: 4 / 1 / 4 / 3;
+        margin: 0;
+    }
+}
+    /* Estilos para tablets pequeñas*/
+@media (min-width: 768px) and (max-width: 1024px) {
+
+}
+
+/* Estilos para tablets grandes*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+
+}
