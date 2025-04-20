@@ -322,7 +322,7 @@ footer {
 @media (max-width: 480px) {
     .top-cabeza {
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: 1fr 50px 1fr;
         padding: 10px;
     }
     .top-logo {
@@ -395,6 +395,8 @@ footer {
         grid-template-rows: repeat(6, 1fr);
         padding: 0;
         gap: 15px 2px;
+        margin: 0 auto;
+        max-width: 340px;
     }
     .selected-news li,
     .all-books li {
@@ -458,6 +460,7 @@ footer {
     }
     .footer-info button {
         font-size: 1.25rem;
+        width: 150px;
     }
     .map {
         width: 100%;
@@ -529,7 +532,6 @@ footer {
     }
     .cuerpo {
         width: 100%;
-        background-color: chartreuse;
         margin: 0;
     }
     .selected-news {
@@ -542,10 +544,16 @@ footer {
     .new-subtitulo {
         font-size: 1.5rem;
     }
+    .selected-news,
+    .all-books {
+        max-width: 481px;
+    }
+
     .selected-news li,
     .all-books li {
         margin: 1vw;
         width: 97%;
+
     }
     .selected-news li img,
     .all-books li img {
@@ -597,9 +605,11 @@ footer {
     }
     .footer-info input {
         font-size: 1.25rem;
+        width: 60%;
     }
     .footer-info button {
         font-size: 1.25rem;
+        width: 150px;
     }
     .map {
         width: 100%;
@@ -609,11 +619,309 @@ footer {
     }
 }
     /* Estilos para tablets pequeñas*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
+    .buscador {
+        width: 55%;
+        margin-right: 1rem;
+    }
+    .menu-paginas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .menu-paginas ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-paginas ul li {
+        padding: 8px;
 
+    }
+    .menu-paginas ul li a {
+        font-size: 1.25rem;
+    }
+    .cuerpo {
+        width: 100%;
+        margin: 0;
+    }
+    .selected-news {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 0;
+        justify-items: center;
+        justify-content: center;
+    }   
+    .new-subtitulo {
+        font-size: 1.5rem;
+    }
+    .selected-news,
+    .all-books {
+        max-width: 481px;
+    }
+
+    .selected-news li,
+    .all-books li {
+        margin: 1vw;
+        width: 97%;
+
+    }
+    .selected-news li img,
+    .all-books li img {
+        width: 100%;
+        height: 100%;
+    }
+    .selected-news li h4,
+    .selected-news li h5,
+    .all-books li h4,
+    .all-books li h5 {
+        font-size: 0.95rem;
+        white-space: wrap; 
+    }
+    .selected-news li p {
+        font-size: 1.2rem;
+    }
+    .selected-news li button {
+        font-size: 1.1rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: baseline;
+    }
+    .pie-logo {
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .pie-logo a img {
+        width: 15rem;
+        height: 6.25rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-info h3 {
+        font-size: 1.25rem;
+    }
+    .footer-info li, p {
+        font-size: 0.9rem;
+    }
+    .footer-info:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .footer-info ul {
+        padding-left: 0;
+    }
+    .footer-info input {
+        font-size: 1.25rem;
+        width: 60%;
+    }
+    .footer-info button {
+        font-size: 1.25rem;
+        width: 150px;
+    }
+    .map {
+        width: 100%;
+        height: 100%;
+        grid-area: 4 / 1 / 4 / 3;
+        margin: 0;
+    }
 }
 
 /* Estilos para tablets grandes*/
 @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    .menu-paginas {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 10px 0;
+    }
+    .menu-paginas ul {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+    .menu-paginas ul li {
+        padding: 8px;
 
+    }
+    .menu-paginas ul li a {
+        font-size: 1.25rem;
+    }
+    .cuerpo {
+        width: 100%;
+        margin: 0;
+    }
+    .selected-news {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        padding-left: 0;
+        justify-items: center;
+        justify-content: center;
+    }   
+    .new-subtitulo {
+        font-size: 1.5rem;
+    }
+    .selected-news,
+    .all-books {
+        max-width: 481px;
+    }
+
+    .selected-news li,
+    .all-books li {
+        margin: 1vw;
+        width: 97%;
+
+    }
+    .selected-news li img,
+    .all-books li img {
+        width: 100%;
+        height: 100%;
+    }
+    .selected-news li h4,
+    .selected-news li h5,
+    .all-books li h4,
+    .all-books li h5 {
+        font-size: 0.95rem;
+        white-space: wrap; 
+    }
+    .selected-news li p {
+        font-size: 1.2rem;
+    }
+    .selected-news li button {
+        font-size: 1.1rem;
+    }
+    footer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        gap: 10px;
+        align-items: baseline;
+    }
+    .pie-logo {
+        width: 100%;
+        height: 100%;
+        grid-area: 1 / 1 / 2 / 3;
+    }
+    .pie-logo a img {
+        width: 15rem;
+        height: 6.25rem;
+        display: block;
+        margin: 0 auto;
+    }
+    .footer-info h3 {
+        font-size: 1.25rem;
+    }
+    .footer-info li, p {
+        font-size: 0.9rem;
+    }
+    .footer-info:nth-child(4) {
+        grid-area: 3 / 1 / 4 / 3;
+    }
+    .footer-info ul {
+        padding-left: 0;
+    }
+    .footer-info input {
+        font-size: 1.25rem;
+        width: 50%;
+    }
+    .footer-info button {
+        font-size: 1.25rem;
+        width: 150px;
+    }
+    .map {
+        width: 100%;
+        height: 100%;
+        grid-area: 4 / 1 / 4 / 3;
+        margin: 0;
+    }
+}
+/* Estilos para pantallas grandes*/
+@media (min-width: 1281px) and (max-width: 1440px) {
+        .menu-paginas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 10px 0;
+        }
+        .menu-paginas ul {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 0;
+            padding: 0;
+        }
+        .menu-paginas ul li {
+            padding: 8px;
+    
+        }
+        .menu-paginas ul li a {
+            font-size: 1.25rem;
+        }
+        .cuerpo {
+            width: 100%;
+            margin: 0;
+        }
+        .selected-news {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding-left: 0;
+            justify-items: center;
+            justify-content: center;
+        }   
+        .new-subtitulo {
+            font-size: 1.5rem;
+        }
+        .selected-news,
+        .all-books {
+            max-width: 481px;
+        }
+    
+        .selected-news li,
+        .all-books li {
+            margin: 1vw;
+            width: 97%;
+    
+        }
+        .selected-news li img,
+        .all-books li img {
+            width: 100%;
+            height: 100%;
+        }
+        .selected-news li h4,
+        .selected-news li h5,
+        .all-books li h4,
+        .all-books li h5 {
+            font-size: 0.95rem;
+            white-space: wrap; 
+        }
+        .selected-news li p {
+            font-size: 1.2rem;
+        }
+        
+        .selected-news li button {
+            font-size: 1.1rem;
+        }
+        .footer-info input {
+            font-size: 0.8rem;
+            width: 100%;
+        }
+        .footer-info button {
+            font-size: 1.25rem;
+            width: 150px;
+        }
 }
