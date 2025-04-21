@@ -101,7 +101,11 @@ body {
     text-shadow: 1px 1px 2px #000000;
     border-bottom: 1px solid #fff;
 }
-
+.menu-paginas ul li a.active {
+    color: #ffcc00; 
+    font-weight: bold; 
+    border-bottom: 2px solid #ffcc00; 
+  }
 .cuerpo {
     width: 80%;
     margin: 0 auto;
