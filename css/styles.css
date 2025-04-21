@@ -130,6 +130,7 @@ body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 0.625rem;
+    justify-content: center;
 }
 
 .selected-news li,
@@ -147,7 +148,7 @@ body {
 
 .selected-news li img,
 .all-books li img {
-    width: 10vw;
+    width: 12vw;
     height: auto;
     border-radius: 15px;
     cursor: pointer;
@@ -225,12 +226,13 @@ body {
 }
 
 footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     background-color: #1c3567;
     color: #f6eeeb;
     text-align: center;
     padding: 0.625rem;
-    display: flex;
-    gap: 3.125rem;
     margin-top: 1.25rem;
     text-shadow: 2px 2px 2px #000000;
 }
@@ -276,7 +278,53 @@ footer {
     align-self: center;
     font-size: 1rem;
 }
+.top-pie {
+    color: #f6eeeb;
+    text-align: center;
+    padding: 0.625rem;
+    display: flex;
+    gap: 3.125rem;
+    margin-top: 1.25rem;
+    text-shadow: 2px 2px 2px #000000;
+}
+footer .container {
+    background-color: #1c3567;
+    color: #f6eeeb;
+    text-align: center;
+    gap: 3.125rem;
+    text-shadow: 2px 2px 2px #000000;
+    
+}
+.btn-primary {
+    background-color: #2378e0;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    border: 2px solid #a34211;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    border: 2px solid #a34211;
 
+}
+.btn-primary.position-fixed {
+    position: fixed;
+    right: 20px; /* Posición fija desde la derecha */
+}
+  
+.btn-primary[href="#top"] {
+    bottom: 80px; /* Botón para subir, más arriba */
+}
+  
+.btn-primary[href="#footer"] {
+    bottom: 20px; /* Botón para bajar, más abajo */
+}
 
 /*CONTACTO.HTML*/
 
@@ -441,9 +489,14 @@ footer {
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+    }
+    .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 8px;
         align-items: baseline;
     }
     .pie-logo {
@@ -463,7 +516,7 @@ footer {
     .footer-info li, p {
         font-size: 0.75rem;
     }
-    .footer-info:nth-child(4) {
+    .footer-info:nth-child(3) {
         grid-area: 3 / 1 / 4 / 3;
     }
     .footer-info ul {
@@ -482,8 +535,15 @@ footer {
         grid-area: 4 / 1 / 4 / 3;
         margin: 0;
     }
+    footer .container {
+        width: 100%;
+        grid-area: 2 / 1 / 2 / 2;
+    }
     .formulario {
         width: 80vw;
+    }
+    .list-inline {
+        font-size: 1rem;
     }
 }
 /* Tamaño Mediano de moviles*/
@@ -602,9 +662,14 @@ footer {
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+    }
+    .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 8px;
         align-items: baseline;
     }
     .pie-logo {
@@ -624,7 +689,7 @@ footer {
     .footer-info li, p {
         font-size: 0.9rem;
     }
-    .footer-info:nth-child(4) {
+    .footer-info:nth-child(3) {
         grid-area: 3 / 1 / 4 / 3;
     }
     .footer-info ul {
@@ -731,9 +796,14 @@ footer {
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+    }
+    .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 8px;
         align-items: baseline;
     }
     .pie-logo {
@@ -753,7 +823,7 @@ footer {
     .footer-info li, p {
         font-size: 0.9rem;
     }
-    .footer-info:nth-child(4) {
+    .footer-info:nth-child(3) {
         grid-area: 3 / 1 / 4 / 3;
     }
     .footer-info ul {
@@ -858,9 +928,14 @@ footer {
     }
     footer {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+    }
+    .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
         grid-template-rows: 80px 1fr 1fr 1fr;
-        gap: 10px;
+        gap: 8px;
         align-items: baseline;
     }
     .pie-logo {
@@ -880,7 +955,7 @@ footer {
     .footer-info li, p {
         font-size: 0.9rem;
     }
-    .footer-info:nth-child(4) {
+    .footer-info:nth-child(3) {
         grid-area: 3 / 1 / 4 / 3;
     }
     .footer-info ul {

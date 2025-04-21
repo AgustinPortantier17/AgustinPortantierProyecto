@@ -52,14 +52,13 @@
       </div>
 
       <nav class="menu-paginas">
-        <ul class="menu-items">
+        <ul>
           <li><a href="index.html">Inicio</a></li>
           <li><a href="productos.html">Productos</a></li>
-          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="contacto.html ">Contacto</a></li>
         </ul>
       </nav>
     </header>
-
     <main class="cuerpo">
       <section class="novedades">
         <h3 class="new-subtitulo">Novedades</h3>
@@ -354,51 +353,73 @@
       </section>
     </main>
 
-    <footer class="pie">
-      <div class="pie-logo">
-        <a href="index.html">
-          <img
-            src="./assets/logo.png"
-            alt="Logo de Librería República"
-            class="logo"
-          />
-        </a>
+    <footer id="footer" class="pie">
+      <div class="top-pie">
+        <div class="pie-logo">
+          <a href="index.html">
+            <img
+              src="./assets/logo.png"
+              alt="Logo de Librería República"
+              class="logo"
+            />
+          </a>
+        </div>
+        <section class="footer-info">
+          <h3>Contáctanos</h3>
+          <address>
+            <ul>
+              <li>Av. República 1234, Montevideo, Uruguay.</li>
+              <li>Whatsapp: 099 000 111.</li>
+              <li>Lunes a Viernes de 09:00 a 18:00.</li>
+            </ul>
+          </address>
+        </section>
+        <div class="footer-info">
+          <h3>Newsletter</h3>
+          <p>Suscríbete para recibir novedades y ofertas especiales.</p>
+          <input type="email" placeholder="Correo electrónico" />
+          <button>Suscribirme</button>
+        </div>
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13089.108717642826!2d-56.173199!3d-34.899493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f804cdceb39e3%3A0xbadd1aa2990b5b49!2sRep%C3%BAblica%201234%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1742691622098!5m2!1ses-419!2suy"
+            width="100%"
+            height="100%"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </div>
-      <section class="footer-info">
-        <h3>Contáctanos</h3>
-        <address>
-          <ul>
-            <li>Av. República 1234, Montevideo, Uruguay.</li>
-            <li>Whatsapp: 099 000 111.</li>
-            <li>Lunes a Viernes de 09:00 a 18:00.</li>
-          </ul>
-        </address>
-      </section>
-      <div class="footer-info">
-        <h3>Redes Sociales</h3>
-        <ul>
-          <li>Instagram: LibreríaRepúblicaOK.</li>
-          <li>X: @LibreríaRepública</li>
-          <li>Facebook: Librería República</li>
+      <div class="container">
+        <p>&copy; 2025 Librería República. Todos los derechos reservados.</p>
+        <ul class="list-inline">
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Instagram</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Facebook</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#" class="text-white">Twitter</a>
+          </li>
         </ul>
       </div>
-      <div class="footer-info">
-        <h3>Newsletter</h3>
-        <p>Suscríbete para recibir novedades y ofertas especiales.</p>
-        <input type="email" placeholder="Correo electrónico" />
-        <button>Suscribirme</button>
-      </div>
-      <div class="map">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13089.108717642826!2d-56.173199!3d-34.899493!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f804cdceb39e3%3A0xbadd1aa2990b5b49!2sRep%C3%BAblica%201234%2C%2011200%20Montevideo%2C%20Departamento%20de%20Montevideo!5e0!3m2!1ses-419!2suy!4v1742691622098!5m2!1ses-419!2suy"
-          width="100%"
-          height="100%"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
     </footer>
+    <a
+      href="#top"
+      class="btn btn-primary position-fixed"
+      style="bottom: 80px; right: 20px"
+    >
+      ↑
+    </a>
+    <a
+      href="#footer"
+      class="btn btn-primary position-fixed"
+      style="bottom: 20px; right: 20px"
+    >
+      ↓
+    </a>
   </body>
 </html>
