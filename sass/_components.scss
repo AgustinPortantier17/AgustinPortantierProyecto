@@ -1,0 +1,230 @@
+// Estilo de los componentes
+
+
+// 1) Header / cabeza
+.top-logo {
+    img {
+        @include logo-img;
+    }
+}    
+
+.buscador {
+        input {
+            @include flex-ai-center;
+            flex: 1;
+            padding: 0.625rem;
+        border-radius: 15px 0 0 15px;
+        outline: none;
+        font-size: 1rem;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        }
+
+        button {
+            background-color: $btn-search-bgcolor;
+            width: 3rem;
+            border-radius: 0 15px 15px 0;
+            cursor: pointer;
+
+            &:hover {
+                background-color: $btn-header-hover-bgcolor;
+            }
+
+            img {
+                width: 1.5rem;
+                height: 2rem;
+                display: inline ;
+            }
+        }
+    }
+
+    .btn-usuario {
+        button {
+            align-items: center;
+        width: 3rem;
+        height: 3rem;
+        cursor: pointer;
+        border-radius: 15px;
+
+        &:hover {
+            background-color: $btn-header-hover-bgcolor;
+        }
+
+        img {
+            width: auto;
+            display: inline;
+        }
+        }
+    }
+.menu-paginas {
+    ul {
+            @include flex-jc-center;
+            gap: 1rem;
+            font-size: 1.75rem;
+
+            li {
+                text-align: center;
+                padding: 0.5rem;
+                cursor: pointer;
+
+                a {
+                    color: $texto-nav-color;
+                    text-decoration: none;
+                    text-shadow: 1px 1px 2px #000;
+                    border-bottom: 1px solid #fff;
+
+                    &.active {
+                        color: #e4e47f;
+                        border-bottom: 4px ridge #e4e47f ;
+
+                        
+                    }
+                }
+            }
+        }
+}
+// 2) Main
+.cuerpo {
+.new-subtitulo {
+    text-align: center;
+    margin: 1.25rem;
+    font-size: 1.5rem;
+    text-decoration: underline;
+    font-weight: 900;
+    text-shadow: 2px 2px 20px #ddd5a6;
+}
+    .selected-news {
+    @include grid-jc-center;
+    gap: 0.625rem;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    @include libros-interno-SN-AB;
+
+    }
+    .all-books {
+        @include grid-jc-center;
+        gap: 0.625rem;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        @include libros-interno-SN-AB;
+    }
+
+    .mid-info {
+        img {
+            width: 100%;
+            height: auto;
+            padding: 0.625rem;
+        }
+    }
+
+}   
+
+
+.bot-book {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: $bot-book-bgcolor;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-right: 0.625rem;
+}
+
+
+// 3) Footer
+
+.footer-info {
+    h3 {
+            font-size: 1.25rem;
+            margin-bottom: 0.625rem;
+        }
+
+        li, p {
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+            list-style: none;
+        }
+
+        input {
+            width: 100%;
+            height: 2.5rem;
+            margin-top: 0.5rem;
+            border-radius: 10px;
+            font-size: 1rem;
+            text-align: center;
+            align-self: center;
+        }
+
+        button {
+            border: none;
+            margin: 0.5rem;
+            cursor: pointer;
+            width: 50%;
+            align-self: center;
+            font-size: 1rem;
+        }
+    }
+
+.btn-primary {
+    @include flex-jc-ai-center;
+    font-size: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: $btn-up-down-bgcolor2;
+    border: 2px solid $btn-up-down-bgcolor2;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: $btn-up-down-bgcolor;
+
+    &:hover {
+        background-color: $btn-up-down-bgcolor2;
+        border: 2px solid $btn-up-down-bgcolor;
+        color: $btn-up-down-bgcolor;
+    }
+
+    .position-fixed {
+        position: fixed;
+        right: 20px;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    gap: 0.9375rem;
+    margin: 0 auto;
+    width: 30vw;
+    max-width: 576px;
+
+    label {
+        font-size: 1.4rem;
+    }
+
+    input {
+        width: 100%;
+        padding: 0.625rem;
+        font-size: 1rem;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        @extend input;
+        height: 9.375rem;
+        resize: none;
+    }
+
+    button {
+        padding: 0.625rem 1.25rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        color: #fff;
+        max-width: 9.375rem;
+        background-color:$btn-header-hover-bgcolor;
+        text-align: center;
+        align-self: center;
+    }
+}
+

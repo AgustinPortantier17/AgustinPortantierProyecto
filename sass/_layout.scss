@@ -1,0 +1,91 @@
+// Estilo de la Página
+
+// 1) Header / cabeza
+.cabeza {
+    background-color: $secondary-bgcolor;
+    width: 100%;
+
+    .top-cabeza {
+        @include flex-ai-center;
+
+        .top-logo {
+            @include flex-jc-ai-center;
+            width: 20%;
+            height: auto;
+            margin-top: 1rem;
+
+        }
+
+        .buscador {
+            width: 60%;
+            height: 3.125rem;
+            display: flex;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .btn-usuario {
+            width: 20%;
+            @include flex-jc-center;
+            gap: 1.25rem;
+        }
+    }
+
+    .menu-paginas {
+        background-color: $tertiary-bgcolor;
+        font-weight: bold;
+
+    }
+}
+
+
+
+
+// 2) Main / cuerpo
+
+.cuerpo {
+    width: 80%;
+    margin: 0 auto;
+    @include flex-jc-ai-center;
+    flex-direction: column;
+
+    section {
+        max-width: 1524px;
+    }
+
+    .mid-info {
+        width: 100%;
+    }
+}
+
+// 3) Footer
+
+.pie {
+    .footer-info {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+
+        
+    }
+    .pie-logo {
+        width: 20%;
+        height: auto;
+    }
+    .top-pie {
+        color: $footer-color;
+        text-align: center;
+        padding: 0.625rem;
+        display: flex;
+        gap: 3.125rem;
+        margin-top: 1.25rem;
+        text-shadow: 2px 2px 2px #000000;
+    }
+    
+    .container {
+        color: $footer-color;
+        text-align: center;
+        gap: 3.125rem;
+        text-shadow: 2px 2px 2px #000000;
+    }
+}

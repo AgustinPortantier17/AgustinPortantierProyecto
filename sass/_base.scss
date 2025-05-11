@@ -1,0 +1,37 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family;
+    background-color: $primary-bgcolor;
+    font-size: $font-size-base;
+}
+
+section {
+    max-width: 1524px;
+}
+
+
+ul,
+li {
+    list-style: none;
+}
+
+img {
+    @include logo-img;
+    vertical-align: middle;
+}
+
+footer {
+    @include flex-ai-center;
+    flex-direction: column;
+    width: 100%;
+    background-color: $secondary-bgcolor;
+    color: #f6eeeb;
+    padding: 0.625rem;
+    margin-top: 1.25rem;
+    text-shadow: 2px 2px 2px #000000;
+}

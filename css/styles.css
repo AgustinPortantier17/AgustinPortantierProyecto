@@ -6,7 +6,7 @@
 }
 body {
     font-size: 1rem;
-    background-color: #e1eecb
+    background-color: #fdfaf6;
 }
 .cabeza {
     width: 100%;
@@ -55,7 +55,7 @@ body {
     cursor: pointer;
 }
 .buscador button:hover {
-    background-color: #0f6295;
+    background-color: #2a7bae;
 }
 .buscador button img {
     width: 1.5rem;
@@ -79,9 +79,7 @@ body {
 }
 .menu-paginas {
     background-color: #135c89;
-    color: #e7dfbf;
     font-weight: bold;
- 
 }
 .menu-paginas ul {
     display: flex;
@@ -1098,9 +1096,7 @@ footer .container {
         width: 100%;
         margin: 0;
     }
-/*     .cuerpo section {
-       max-width: 1524px;
-    } */
+
     .selected-news {
         display: grid;
         grid-template-columns: repeat(6, 1fr);

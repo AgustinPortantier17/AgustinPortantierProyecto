@@ -1,0 +1,273 @@
+//
+
+@mixin logo-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+@mixin flex-jc-center {
+    display: flex;
+    justify-content: center;
+}
+@mixin flex-ai-center {
+    display: flex;
+    align-items: center;
+}
+@mixin flex-jc-ai-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin grid-jc-ai-center {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@mixin grid-jc-center {
+    display: grid;
+    justify-content: center;
+}
+@mixin grid-ai-center {
+    display: grid;
+    align-items: center;
+}
+//Compartimos todo lo interno de los libros tanto del inicio como del catalogo
+@mixin libros-interno-SN-AB {
+    li {
+        background: #D4BD81;
+        background: linear-gradient(0deg,#b38c8c 0%, #e6c06f 100%);
+        width: 100%;
+        padding: 1rem;
+        border-radius: 15px;
+        @include grid-jc-ai-center;
+        border: 2px solid #175383;
+
+
+            img {
+            @include logo-img;
+            width: 12vw;
+            border-radius: 15px;
+            cursor: pointer;
+        }
+
+            h4, h5 {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 100%;
+            display: block;
+            margin: 0.5rem;
+            color: #fff;
+            text-shadow: 1px 1px 2px #000;
+            font-size: $font-size-base;
+        }
+
+            p {
+            font-size: 1.4rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+            text-align: center;
+            text-decoration: underline;
+            font-weight: bold;
+            color: $precio-color;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+            button {
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 1rem;
+            font-weight: 800;
+            background: linear-gradient(to right, #1c3567 0%, #5d74a7 51%, #1c3567 100%); 
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: #fff;
+            display: block;
+            margin: auto;
+            padding: 0.3rem;
+
+
+            &:hover {
+                background-position: right center;
+                color: #fff;
+                text-decoration: none;
+            
+                }
+            }
+        }
+}
+
+@mixin libros-interno-SN-AB-480 {
+    li {
+        width: 100%;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 1.5rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 2rem;
+        }
+
+        button {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@mixin libros-interno-SN-AB-768 {
+        max-width: 481px;
+    
+    li {
+        width: 97%;
+        margin: 1vw;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 0.95rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@mixin libros-interno-SN-AB-1024 {
+    max-width: 481px;
+    
+    li {
+        margin: 1vw;
+        width: 97%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 0.95rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@mixin libros-interno-SN-AB-1280 {
+    max-width: 481px;
+    
+    li {
+        margin: 1vw;
+        width: 97%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 0.95rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@mixin libros-interno-SN-AB-1440 {
+    max-width: 481px;
+    
+    li {
+        margin: 1vw;
+        max-width: 481px;
+        width: 97%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 0.95rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}
+
+@mixin libros-interno-SN-AB-1900 {
+    max-width: 481px;
+    
+    li {
+        margin: 1vw;
+        max-width: 481px;
+        width: 97%;
+
+        img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        h4, h5 {
+            font-size: 0.95rem;
+            white-space: wrap;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        button {
+            font-size: 1.1rem;
+        }
+    }
+}

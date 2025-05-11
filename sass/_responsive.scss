@@ -1,0 +1,753 @@
+/* RESPONSIVE */
+
+/* Tamaño de Movil pequeños*/
+@media (max-width: 480px) {
+    .cabeza {
+        .top-cabeza {
+            display: grid; 
+            grid-template-rows: 1fr 50px 1fr;
+            padding: 10px;
+        
+            img {
+            width: 200px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+            }
+
+            .top-logo {
+                margin: 0 auto;
+                }
+
+            .buscador {
+            width: 100%;
+            height: 5vh;
+
+            input {
+                width: 100%;
+            font-size: 0.87rem;
+            margin: 0 auto;
+            }
+
+            button {
+                width: 3.73rem;
+            margin: 0 auto;
+
+            img {
+                width: 1.68rem;
+            height: 2.69rem;
+            }
+            }
+        }
+    .btn-usuario {
+            width: 100%;
+            margin: 0 auto;
+
+            button {
+                width: 3.34rem;
+
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+        }
+        
+        
+    .menu-paginas {
+            @include flex-jc-ai-center;
+            width: 100%;
+            padding: 10px 0;
+
+                ul {
+                @include flex-jc-center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+
+                    li {
+                    padding: 8px;
+
+                        a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .cuerpo {
+        width: 100%;
+        margin: 0;
+
+        section {
+        width: 90%;
+        }   
+
+        .new-subtitulo {
+        font-size: 1.25rem;
+        }
+        .selected-news
+        {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            padding: 0;
+            gap: 15px 2px;
+            margin: 0 auto;
+            max-width: 340px;
+
+            @include libros-interno-SN-AB-480;
+        }
+        .all-books {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(36, 1fr);
+            padding: 0;
+            gap: 15px 2px;
+            margin: 0 auto;
+            max-width: 340px;
+
+            @include libros-interno-SN-AB-480
+        }
+    }
+    
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+
+        .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        gap: 8px;
+        align-items: baseline;
+        }
+        .pie-logo {
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 1 / 2 / 3;
+
+            a {
+                img {
+                width: 15rem;
+                height: 6.25rem;
+                display: block;
+                margin: 0 auto;
+                }   
+            }
+        } 
+        .footer-info {
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            li, p {
+                font-size: 0.75rem;
+            }
+
+            &:nth-child(3) {
+                grid-area: 3 / 1 / 4 / 3;
+            }
+
+            ul {
+                padding-left: 0;
+            }
+
+            input {
+                font-size: 1.25rem;
+            }
+
+            button {
+                font-size: 1.25rem;
+                width: 150px;
+            }
+        }
+    .map {
+            width: 100%;
+            height: 100%;
+            grid-area: 4 / 1 / 4 / 3;
+            margin: 0;
+            }
+    .container {
+        width: 100%;
+        grid-area: 2 / 1 / 2 / 2;
+
+        p {
+            font-size: 0.75rem;
+        }
+        }
+    }
+    .formulario {
+        width: 80vw;
+        }
+    .list-inline {
+        font-size: 1rem;
+        }
+}
+            
+/* Tamaño Mediano de moviles*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+.cabeza {
+        .top-cabeza {
+            display: grid; 
+            grid-template-rows: repeat(3, 1fr);
+            padding: 10px;
+        
+            img {
+            width: 200px;
+            height: 100px;
+            display: block;
+            margin: 0 auto;
+            }
+
+            .top-logo {
+                margin: 0 auto;
+                }
+
+            .buscador {
+            width: 100%;
+            height: 5vh;
+
+            input {
+                width: 100%;
+                font-size: 1.05rem;
+                margin: 0 auto;
+            }
+
+            button {
+                width: 4.2rem;
+                margin: 0 auto;
+
+            img {
+                width: 2.25rem;
+            height: 2.69rem;
+            }
+            }
+        }
+    .btn-usuario {
+            width: 100%;
+            margin: 0 auto;
+
+            button {
+                width: 3.2rem;
+
+                img {
+                    width: auto;
+                    height: auto;
+                }
+            }
+        }
+        }
+        
+        
+    .menu-paginas {
+            @include flex-jc-ai-center;
+            width: 100%;
+            padding: 10px 0;
+
+                ul {
+                @include flex-jc-center;
+                gap: 10px;
+                margin: 0;
+                padding: 0;
+
+                    li {
+                    padding: 8px;
+
+                        a {
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    .cuerpo {
+        width: 100%;
+        margin: 0;
+
+        .new-subtitulo {
+        font-size: 1.5rem;
+        }
+        .selected-news
+        {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            padding-left: 0;
+            justify-items: center;
+
+            @include libros-interno-SN-AB-768;
+        }
+        .all-books {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(18, 1fr);
+            padding-left: 0;
+            justify-items: center;
+
+            @include libros-interno-SN-AB-768;
+        }
+    }
+    
+    .pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 80px;
+
+        .top-pie {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px 1fr 1fr 1fr;
+        gap: 8px;
+        align-items: baseline;
+        }
+        .pie-logo {
+            width: 100%;
+            height: 100%;
+            grid-area: 1 / 1 / 2 / 3;
+
+            a {
+                img {
+                width: 15rem;
+                height: 6.25rem;
+                display: block;
+                margin: 0 auto;
+                }   
+            }
+        } 
+        .footer-info {
+            h3 {
+                font-size: 1.25rem;
+            }
+
+            li, p {
+                font-size: 0.9rem;
+            }
+
+            &:nth-child(3) {
+                grid-area: 3 / 1 / 4 / 3;
+            }
+
+            ul {
+                padding-left: 0;
+            }
+
+            input {
+                font-size: 1.25rem;
+                width: 60%;
+            }
+
+            button {
+                font-size: 1.25rem;
+                width: 150px;
+            }
+        }
+    .map {
+            width: 100%;
+            height: 100%;
+            grid-area: 4 / 1 / 4 / 3;
+            margin: 0;
+            }
+    }
+    .formulario {
+        width: 80vw;
+        }
+}
+
+    /* Estilos para tablets pequeñas*/
+@media (min-width: 769px) and (max-width: 1024px) {
+    .cabeza {
+            .top-cabeza {
+                
+                .buscador {
+                width: 55%;
+                margin-right: 1rem;
+                }
+            }
+            
+            
+        .menu-paginas {
+                @include flex-jc-ai-center;
+                width: 100%;
+                padding: 10px 0;
+
+                    ul {
+                    @include flex-jc-center;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+
+                        li {
+                        padding: 8px;
+
+                            a {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cuerpo {
+            width: 100%;
+            margin: 0;
+
+            .new-subtitulo {
+            font-size: 1.5rem;
+            }
+            .selected-news
+            {
+                @include grid-jc-center;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1024;
+            }
+            .all-books {
+                @include grid-jc-center;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(12, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1024;
+            }
+        }
+        
+        .pie {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 80px;
+
+            .top-pie {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 1fr 1fr 1fr;
+            gap: 8px;
+            align-items: baseline;
+            }
+            .pie-logo {
+                width: 100%;
+                height: 100%;
+                grid-area: 1 / 1 / 2 / 3;
+
+                a {
+                    img {
+                    width: 15rem;
+                    height: 6.25rem;
+                    display: block;
+                    margin: 0 auto;
+                    }   
+                }
+            } 
+            .footer-info {
+                h3 {
+                    font-size: 1.25rem;
+                }
+
+                li, p {
+                    font-size: 0.9rem;
+                }
+
+                &:nth-child(3) {
+                    grid-area: 3 / 1 / 4 / 3;
+                }
+
+                ul {
+                    padding-left: 0;
+                }
+
+                input {
+                    font-size: 1.25rem;
+                    width: 60%;
+                }
+
+                button {
+                    font-size: 1.25rem;
+                    width: 150px;
+                }
+            }
+        .map {
+                width: 100%;
+                height: 100%;
+                grid-area: 4 / 1 / 4 / 3;
+                margin: 0;
+                }
+        }
+        .formulario {
+            width: 80vw;
+            }
+
+}
+
+/* Estilos para tablets grandes*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .cabeza {
+        .menu-paginas {
+                @include flex-jc-ai-center;
+                width: 100%;
+                padding: 10px 0;
+
+                    ul {
+                    @include flex-jc-center;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+
+                        li {
+                        padding: 8px;
+
+                            a {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cuerpo {
+            width: 100%;
+            margin: 0;
+
+            .new-subtitulo {
+            font-size: 1.5rem;
+            }
+            .selected-news
+            {
+                @include grid-jc-center;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1280;
+            }
+            .all-books {
+                @include grid-jc-center;
+                grid-template-columns: repeat(4, 1fr);
+                grid-template-rows: repeat(9, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1280;
+            }
+        }
+        
+        .pie {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 80px;
+
+            .top-pie {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 80px 1fr 1fr 1fr;
+            gap: 8px;
+            align-items: baseline;
+            }
+            .pie-logo {
+                width: 100%;
+                height: 100%;
+                grid-area: 1 / 1 / 2 / 3;
+
+                a {
+                    img {
+                    width: 15rem;
+                    height: 6.25rem;
+                    display: block;
+                    margin: 0 auto;
+                    }   
+                }
+            } 
+            .footer-info {
+                h3 {
+                    font-size: 1.25rem;
+                }
+
+                li, p {
+                    font-size: 0.9rem;
+                }
+
+                &:nth-child(3) {
+                    grid-area: 3 / 1 / 4 / 3;
+                }
+
+                ul {
+                    padding-left: 0;
+                }
+
+                input {
+                    font-size: 1.25rem;
+                    width: 50%;
+                }
+
+                button {
+                    font-size: 1.25rem;
+                    width: 150px;
+                }
+            }
+        .map {
+                width: 100%;
+                height: 100%;
+                grid-area: 4 / 1 / 4 / 3;
+                margin: 0;
+                }
+        }
+        .formulario {
+            width: 80vw;
+            }
+}
+
+/* Estilos para pantallas grandes*/
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .cabeza {
+        .menu-paginas {
+                @include flex-jc-ai-center;
+                width: 100%;
+                padding: 10px 0;
+
+                    ul {
+                    @include flex-jc-center;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+
+                        li {
+                        padding: 8px;
+
+                            a {
+                            font-size: 1.25rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cuerpo {
+            width: 100%;
+            margin: 0;
+
+            .new-subtitulo {
+            font-size: 1.5rem;
+            }
+            .selected-news
+            {
+                @include grid-jc-center;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1440;
+            }
+            .all-books {
+                @include grid-jc-center;
+                grid-template-columns: repeat(5, 1fr);
+                grid-template-rows: repeat(7, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1440;
+            }
+        }
+        
+        .pie {
+            
+            .footer-info {
+
+                input {
+                    font-size: 0.8rem;
+                    width: 100%;
+                }
+
+                button {
+                    font-size: 1.25rem;
+                    width: 150px;
+                }
+            }
+        }
+        .formulario {
+            width: 80vw;
+            }
+}
+
+/* Estilos para pantallas extra grandes*/
+/* Estilos para pantallas grandes*/
+@media (min-width: 1441px) and (max-width: 1900px) {
+    .cabeza {
+        .menu-paginas {
+                @include flex-jc-ai-center;
+                width: 100%;
+                padding: 10px 0;
+
+                    ul {
+                    @include flex-jc-center;
+                    gap: 10px;
+                    margin: 0;
+                    padding: 0;
+
+                        li {
+                        padding: 8px;
+
+                            a {
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+        
+        .cuerpo {
+            width: 100%;
+            margin: 0;
+
+            .new-subtitulo {
+            font-size: 1.5rem;
+            }
+            .selected-news
+            {
+                @include grid-jc-center;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(1, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1900;
+            }
+            .all-books {
+                @include grid-jc-center;
+                grid-template-columns: repeat(6, 1fr);
+                grid-template-rows: repeat(6, 1fr);
+                padding-left: 0;
+                justify-items: center;
+
+                @include libros-interno-SN-AB-1900;
+            }
+        }
+        
+        .pie {
+            
+            .footer-info {
+
+                input {
+                    font-size: 0.8rem;
+                    width: 100%;
+                }
+
+                button {
+                    font-size: 1.25rem;
+                    width: 150px;
+                }
+            }
+        }
+        .formulario {
+            width: 80vw;
+            }
+}
