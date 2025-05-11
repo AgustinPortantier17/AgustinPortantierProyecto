@@ -421,6 +421,31 @@ footer {
   align-self: center;
 }
 
+@keyframes aparecerDesdeAbajo {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.selected-news > li,
+.all-books > li {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: aparecerDesdeAbajo 0.5s ease-out forwards;
+  transition: transform 0.6s ease, box-shadow 0.3s ease;
+  transform-style: preserve-3d;
+}
+
+.selected-news > li:hover,
+.all-books > li:hover {
+  transform: scale(1.05) translateZ(10px) !important;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
 /* RESPONSIVE */
 /* Tamaño de Movil pequeños*/
 @media (max-width: 480px) {
