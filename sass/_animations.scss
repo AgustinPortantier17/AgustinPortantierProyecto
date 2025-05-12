@@ -26,3 +26,91 @@
     transform: scale(1.05) translateZ(10px) !important; 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3) !important; 
 }
+
+
+
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.top-cabeza,
+footer {
+    animation: aparecer 1s ease-in-out;
+}
+
+
+@keyframes colorprecio {
+    0% {
+        color: $precio-color;
+    }
+    50% {
+        color: #b6eece;
+    }
+    100% {
+        color:$precio-color;
+    }
+}
+
+.bot-book p {
+    animation: colorprecio 3s infinite;
+}
+
+
+@keyframes tipiado {
+    from {
+        max-width: 0; // Comienza desde 0
+    }
+    to {
+        max-width: 100%; 
+    }
+}
+
+
+// Estilo para los subtítulos (h3)
+.cuerpo section h3 {
+    width: 15vw;
+    overflow: hidden; 
+    white-space: nowrap; 
+    display: inline-block; 
+    align-content: center;
+    max-width: 0; 
+    animation: tipiado 3s steps(50, end) forwards, 
+}
+
+
+
+@keyframes descender {
+    from {
+        transform: translateY(-100%); 
+        opacity: 0; 
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+
+.menu-paginas {
+    animation: descender 0.8s ease-out forwards; 
+    animation-delay: 1s;
+    transform: translateY(-100%); 
+    opacity: 0; 
+}
+
+
+
+.bot-book > button {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bot-book > button:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+}

@@ -2,14 +2,14 @@
 
 // 1) Header / cabeza
 .cabeza {
-    background-color: $secondary-bgcolor;
     width: 100%;
 
     .top-cabeza {
         @include flex-ai-center;
+            background-color: $secondary-bgcolor;
+            border: 5px solid $quaternary-bgcolor;
 
         .top-logo {
-            @include flex-jc-ai-center;
             width: 20%;
             height: auto;
             margin-top: 1rem;
@@ -51,6 +51,10 @@
 
     section {
         max-width: 1524px;
+        @include grid-jc-ai-center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr;
+        justify-items: center;
     }
 
     .mid-info {
@@ -61,6 +65,9 @@
 // 3) Footer
 
 .pie {
+
+    border: 5px solid $secondary-bgcolor;
+
     .footer-info {
         display: flex;
         flex: 1;

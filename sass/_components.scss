@@ -3,8 +3,23 @@
 
 // 1) Header / cabeza
 .top-logo {
+    a {
+    @include grid-jc-ai-center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-decoration: none
+    }
+    
     img {
         @include logo-img;
+        margin: 0 12px;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee8e8;
+        text-align: center;
+        margin-right: 2px;
     }
 }    
 
@@ -41,11 +56,12 @@
 
     .btn-usuario {
         button {
-            align-items: center;
-        width: 3rem;
-        height: 3rem;
+        align-items: center;
+        width: 6rem;
+        height: 4rem;
         cursor: pointer;
         border-radius: 15px;
+        margin: 0;
 
         &:hover {
             background-color: $btn-header-hover-bgcolor;
@@ -55,6 +71,11 @@
             width: auto;
             display: inline;
         }
+        h4 {
+            font-size: 1rem;
+            margin: 0;
+        }
+
         }
     }
 .menu-paginas {
@@ -92,7 +113,6 @@
     font-size: 1.5rem;
     text-decoration: underline;
     font-weight: 900;
-    text-shadow: 2px 2px 20px #ddd5a6;
 }
     .selected-news {
     @include grid-jc-center;
@@ -132,7 +152,26 @@
 
 
 // 3) Footer
+.pie-logo {
+    a {
+    @include grid-jc-ai-center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    text-decoration: none;
+    }
 
+    img {
+        @include logo-img;
+        margin: 0 12px;
+    }
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: #eee8e8;
+        text-align: center;
+        margin-right: 2px;
+    }
+}
 .footer-info {
     h3 {
             font-size: 1.25rem;
@@ -164,6 +203,9 @@
             font-size: 1rem;
         }
     }
+.map {
+    border: 2px solid #000;
+}
 
 .btn-primary {
     @include flex-jc-ai-center;
