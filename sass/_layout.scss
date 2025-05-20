@@ -12,7 +12,7 @@
         .top-logo {
             width: 20%;
             height: auto;
-            margin-top: 1rem;
+            margin: 1rem 0;
 
         }
 
@@ -33,6 +33,7 @@
 
     .menu-paginas {
         background-color: $tertiary-bgcolor;
+        border: 3px solid $secondary-bgcolor;
         font-weight: bold;
 
     }

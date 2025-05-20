@@ -33,7 +33,7 @@ footer {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  background-color: #a39e95;
+  background-color: #002346;
   color: #f6eeeb;
   padding: 0.625rem;
   margin-top: 1.25rem;
@@ -46,13 +46,13 @@ footer {
 .cabeza .top-cabeza {
   display: flex;
   align-items: center;
-  background-color: rgba(156, 50, 11, 0.8941176471);
-  border: 5px solid #a39e95;
+  background-color: #cbb769;
+  border: 5px solid #002346;
 }
 .cabeza .top-cabeza .top-logo {
   width: 20%;
   height: auto;
-  margin-top: 1rem;
+  margin: 1rem 0;
 }
 .cabeza .top-cabeza .buscador {
   width: 60%;
@@ -68,7 +68,8 @@ footer {
   gap: 1.25rem;
 }
 .cabeza .menu-paginas {
-  background-color: #276aa0;
+  background-color: #002346;
+  border: 3px solid #cbb769;
   font-weight: bold;
 }
 
@@ -94,7 +95,7 @@ footer {
 }
 
 .pie {
-  border: 5px solid rgba(156, 50, 11, 0.8941176471);
+  border: 5px solid #cbb769;
 }
 .pie .footer-info {
   display: flex;
@@ -121,26 +122,21 @@ footer {
   text-shadow: 2px 2px 2px #000000;
 }
 
-.top-logo a {
-  display: grid;
+.top-logo {
+  display: flex;
   justify-content: center;
   align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
-  text-decoration: none;
 }
 .top-logo img {
   width: 80%;
   height: auto;
   display: block;
+  width: 15vw;
+  height: 7.5vw;
   margin: 0 12px;
-}
-.top-logo h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #eee8e8;
-  text-align: center;
-  margin-right: 2px;
+  border: 15px double #ffffff;
+  box-shadow: 0 0 0 8px #002346;
+  border-radius: 30px;
 }
 
 .buscador input, .buscador .formulario textarea, .formulario .buscador textarea {
@@ -149,20 +145,22 @@ footer {
   flex: 1;
   padding: 0.625rem;
   border-radius: 15px 0 0 15px;
+  border: 5px double #002346;
   outline: none;
   font-size: 1rem;
+  font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 .buscador button {
-  background-color: rgba(66, 152, 237, 0.8666666667);
+  background-color: rgba(150, 61, 86, 0.8666666667);
   width: 3rem;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
 }
 .buscador button:hover {
-  background-color: #46b8ff;
+  background-color: rgba(162, 11, 54, 0.8666666667);
 }
 .buscador button img {
   width: 1.5rem;
@@ -177,16 +175,17 @@ footer {
   cursor: pointer;
   border-radius: 15px;
   margin: 0;
+  border: 5px double #002346;
 }
 .btn-usuario button:hover {
-  background-color: #46b8ff;
+  background-color: rgba(162, 11, 54, 0.8666666667);
 }
 .btn-usuario button img {
   width: auto;
   display: inline;
 }
 .btn-usuario button h4 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   margin: 0;
 }
 
@@ -228,7 +227,7 @@ footer {
 }
 .cuerpo .selected-news li {
   background: #D4BD81;
-  background: linear-gradient(0deg, #b38c8c 0%, #e6c06f 100%);
+  background: linear-gradient(0deg, #002346 0%, #cbb769 100%);
   width: 100%;
   padding: 1rem;
   border-radius: 15px;
@@ -288,7 +287,7 @@ footer {
 }
 .cuerpo .all-books li {
   background: #D4BD81;
-  background: linear-gradient(0deg, #b38c8c 0%, #e6c06f 100%);
+  background: linear-gradient(0deg, #002346 0%, #cbb769 100%);
   width: 100%;
   padding: 1rem;
   border-radius: 15px;
@@ -355,11 +354,6 @@ footer {
 }
 
 .pie-logo a {
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr;
   text-decoration: none;
 }
 .pie-logo img {
@@ -367,13 +361,9 @@ footer {
   height: auto;
   display: block;
   margin: 0 12px;
-}
-.pie-logo h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: #eee8e8;
-  text-align: center;
-  margin-right: 2px;
+  border: 15px double #ffffff;
+  box-shadow: 0 0 0 8px #cbb769;
+  border-radius: 30px;
 }
 
 .footer-info h3 {
@@ -460,7 +450,7 @@ footer {
   cursor: pointer;
   color: #fff;
   max-width: 9.375rem;
-  background-color: #46b8ff;
+  background-color: rgba(162, 11, 54, 0.8666666667);
   text-align: center;
   align-self: center;
 }
@@ -587,14 +577,10 @@ footer {
     padding: 10px;
   }
   .cabeza .top-cabeza img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
-  }
-  .cabeza .top-cabeza h1 {
-    font-size: 1.5rem;
-    padding-left: 15px;
   }
   .cabeza .top-cabeza .top-logo {
     margin: 0 auto;
@@ -602,6 +588,7 @@ footer {
   .cabeza .top-cabeza .buscador {
     width: 100%;
     height: 5vh;
+    margin-top: 15px;
   }
   .cabeza .top-cabeza .buscador input, .cabeza .top-cabeza .buscador .formulario textarea, .formulario .cabeza .top-cabeza .buscador textarea {
     width: 100%;
@@ -738,17 +725,13 @@ footer {
     grid-area: 1/1/2/3;
   }
   .pie .pie-logo a img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
   }
-  .pie .pie-logo a h1 {
-    font-size: 1.5rem;
-    padding-left: 15px;
-  }
   .pie .footer-info {
-    margin-top: 10px;
+    margin-top: 30px;
   }
   .pie .footer-info h3 {
     font-size: 1.25rem;
@@ -797,19 +780,16 @@ footer {
     padding: 10px;
   }
   .cabeza .top-cabeza img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
-  }
-  .cabeza .top-cabeza h1 {
-    font-size: 1.5rem;
-    padding-left: 15px;
   }
   .cabeza .top-cabeza .top-logo {
     margin: 0 auto;
   }
   .cabeza .top-cabeza .buscador {
+    margin-top: 15px;
     width: 100%;
     height: 5vh;
   }
@@ -838,7 +818,7 @@ footer {
     height: auto;
   }
   .cabeza .top-cabeza .btn-usuario button h4 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .cabeza .menu-paginas {
     display: flex;
@@ -943,17 +923,13 @@ footer {
     grid-area: 1/1/2/3;
   }
   .pie .pie-logo a img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
   }
-  .pie .pie-logo a h1 {
-    font-size: 1.5rem;
-    padding-left: 15px;
-  }
   .footer-info {
-    margin-top: 20px;
+    margin-top: 30px;
   }
   .footer-info h3 {
     font-size: 1.25rem;
@@ -994,14 +970,10 @@ footer {
     padding: 10px;
   }
   .cabeza .top-cabeza img {
-    width: 100px;
+    width: 200px;
     height: 100px;
     display: block;
     margin: 0 auto;
-  }
-  .cabeza .top-cabeza h1 {
-    font-size: 1.5rem;
-    padding-left: 15px;
   }
   .cabeza .top-cabeza .top-logo {
     margin: 0 auto;
@@ -1009,6 +981,7 @@ footer {
   .cabeza .top-cabeza .buscador {
     width: 65%;
     margin-right: 1rem;
+    margin-top: 20px;
   }
   .cabeza .top-cabeza .buscador input, .cabeza .top-cabeza .buscador .formulario textarea, .formulario .cabeza .top-cabeza .buscador textarea {
     width: 100%;
@@ -1035,7 +1008,7 @@ footer {
     height: auto;
   }
   .cabeza .top-cabeza .btn-usuario button h4 {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
   .cabeza .menu-paginas {
     display: flex;
@@ -1142,13 +1115,13 @@ footer {
     grid-area: 1/1/2/3;
   }
   .pie .pie-logo a img {
-    width: 120px;
+    width: 240px;
     height: 120px;
     display: block;
     margin: 0 auto;
   }
   .pie .footer-info {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .pie .footer-info h3 {
     font-size: 1.25rem;
@@ -1183,16 +1156,11 @@ footer {
 /* Estilos para tablets grandes*/
 @media (min-width: 1025px) and (max-width: 1280px) {
   .cabeza .top-cabeza img {
-    width: 80px;
+    width: 160px;
     height: 80px;
     display: block;
     margin: 0 auto;
     padding-left: 10px;
-  }
-  .cabeza .top-cabeza h1 {
-    font-size: 1.1rem;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .cabeza .top-cabeza .buscador {
     width: 55%;
@@ -1333,13 +1301,13 @@ footer {
     grid-area: 1/1/2/3;
   }
   .pie .pie-logo a img {
-    width: 120px;
+    width: 240px;
     height: 120px;
     display: block;
     margin: 0 auto;
   }
   .pie .footer-info {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .pie .footer-info h3 {
     font-size: 1.25rem;
@@ -1374,16 +1342,11 @@ footer {
 /* Estilos para pantallas grandes*/
 @media (min-width: 1281px) and (max-width: 1440px) {
   .cabeza .top-cabeza img {
-    width: 80px;
+    width: 160px;
     height: 80px;
     display: block;
     margin: 0 auto;
     padding-left: 10px;
-  }
-  .cabeza .top-cabeza h1 {
-    font-size: 1.1rem;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   .cabeza .top-cabeza .buscador {
     width: 55%;

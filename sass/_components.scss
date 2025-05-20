@@ -3,23 +3,16 @@
 
 // 1) Header / cabeza
 .top-logo {
-    a {
-    @include grid-jc-ai-center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    text-decoration: none
-    }
-    
+        @include flex-jc-ai-center; 
+
     img {
         @include logo-img;
+        width: 15vw;
+        height: 7.5vw;
         margin: 0 12px;
-    }
-    h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #eee8e8;
-        text-align: center;
-        margin-right: 2px;
+        border: 15px double #ffffff;
+        box-shadow: 0 0 0 8px #002346;  
+        border-radius: 30px;
     }
 }    
 
@@ -29,8 +22,10 @@
             flex: 1;
             padding: 0.625rem;
         border-radius: 15px 0 0 15px;
+        border: 5px double #002346;
         outline: none;
         font-size: 1rem;
+        font-weight: 600;
         white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -62,6 +57,7 @@
         cursor: pointer;
         border-radius: 15px;
         margin: 0;
+        border: 5px double #002346;
 
         &:hover {
             background-color: $btn-header-hover-bgcolor;
@@ -72,7 +68,7 @@
             display: inline;
         }
         h4 {
-            font-size: 1rem;
+            font-size: 0.9rem;
             margin: 0;
         }
 
@@ -154,22 +150,15 @@
 // 3) Footer
 .pie-logo {
     a {
-    @include grid-jc-ai-center;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
     text-decoration: none;
     }
 
     img {
         @include logo-img;
         margin: 0 12px;
-    }
-    h1 {
-        font-size: 2rem;
-        font-weight: 600;
-        color: #eee8e8;
-        text-align: center;
-        margin-right: 2px;
+        border: 15px double #ffffff;
+        box-shadow: 0 0 0 8px #cbb769;  
+        border-radius: 30px;
     }
 }
 .footer-info {
