@@ -615,7 +615,7 @@ footer {
     height: auto;
   }
   .cabeza .top-cabeza .btn-usuario button h4 {
-    font-size: 0.8rem;
+    display: none;
   }
   .cabeza .menu-paginas {
     display: flex;
@@ -818,7 +818,7 @@ footer {
     height: auto;
   }
   .cabeza .top-cabeza .btn-usuario button h4 {
-    font-size: 0.8rem;
+    display: none;
   }
   .cabeza .menu-paginas {
     display: flex;
@@ -1008,7 +1008,7 @@ footer {
     height: auto;
   }
   .cabeza .top-cabeza .btn-usuario button h4 {
-    font-size: 0.8rem;
+    display: none;
   }
   .cabeza .menu-paginas {
     display: flex;
