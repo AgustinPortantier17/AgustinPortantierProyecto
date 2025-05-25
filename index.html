@@ -63,10 +63,21 @@
             <img src="assets/icons/cart.webp" alt="Ver Carrito de Compras" />
             <h4>Carrito</h4>
           </button>
-          <button>
-            <img src="assets/icons/account.webp" alt="Mi Perfil" />
-            <h4>Mi Cuenta</h4>
-          </button>
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <img src="assets/icons/account.webp" alt="Ver mi Cuenta" />
+              <h4>Mi Cuenta</h4>
+            </button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">Inicar sesión</a></li>
+              <li><a class="dropdown-item" href="#">Crear Cuenta</a></li>
+            </ul>
+          </div>
         </div>
       </div>
 

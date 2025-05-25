@@ -73,6 +73,39 @@
         }
 
         }
+
+        .dropdown {
+            button {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            color: #000;
+
+            &:hover {
+            background-color: $btn-header-hover-bgcolor;
+        }
+        }
+        }
+
+        ul {
+            border: 1px solid #000000;
+
+            li {
+                a {
+                    color: #000000;
+                    font-weight: 600;
+
+                    &:hover {
+                    background-color: $btn-header-hover-bgcolor;
+                    color: #ffffff
+                }
+                }
+
+                
+                
+            }
+        }
+        
     }
 .menu-paginas {
     ul {
@@ -116,7 +149,60 @@
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr);
     @include libros-interno-SN-AB;
+        .img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
 
+.img-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+  .icon-fav {
+    border: none;
+  }
+}
+
+.fav-toggle {
+  display: none; // Oculta el checkbox
+}
+
+.icon-fav-label {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  background: #bbb8b8;
+  border-radius: 40%;
+  padding: 2px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+  @include flex-jc-ai-center;
+  cursor: pointer;
+  transition: background 0.2s, box-shadow 0.2s;
+  z-index: 2;
+  outline: none;
+  border: none;
+}
+
+.fav-toggle:checked + .icon-fav-label {
+  background: #ffe066; // Amarillo
+  box-shadow: 0 1px 8px #bfa800;
+}
+
+.icon-fav-label:focus {
+  outline: none;
+  box-shadow: 0 1px 8px #bfa800;
+}
+
+.icon-fav {
+  width: 28px;
+  height: 28px;
+  display: block;
+  pointer-events: none; // Para que el click sea sobre el label
+}
     }
     .all-books {
         @include grid-jc-center;
